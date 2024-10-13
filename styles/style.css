@@ -218,20 +218,17 @@ input[type="checkbox"]:active + span::before {
   border: 1px solid white;
   color: white;
   cursor: pointer;
-  position: relative;
   font-size: 16px;
   font-weight: bold;
+  background-color: rgba(0 0 0 /.6);
 }
 
 .button:hover {
   text-decoration: underline;
 }
 
-.button:active::before {
-  content: " ";
-  position: absolute;
-  background-color: rgba(255 255 255 /.6);
-  inset: 0;
+.button:active {
+  background-color: rgb(255 255 255 /.6);
 }
 
 .button:focus-visible {
@@ -256,7 +253,7 @@ input[type="checkbox"]:active + span::before {
   position: relative;
 }
 
-.content__accent::before {
+.content__accent::after {
   content: "";
   position: absolute;
   background-color: rgba(0 0 0 /0.5);
@@ -288,11 +285,8 @@ input[type="checkbox"]:active + span::before {
   position: relative;
 }
 
-.content__video-card:active::before {
-  content: "";
-  position: absolute;
+.content__video-card:active {
   background-color: rgba(255 255 255 /.6);
-  inset: 0;
 }
 
 .content__video-card:focus-visible {

@@ -23,7 +23,7 @@ html {
   justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
-  margin-inline: auto;
+  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -33,9 +33,9 @@ html {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
+  justify-content: center;
+  align-content: center;
   column-gap: 30px;
-  margin-top: 129px;
-  margin-right: 321px;
   max-width: 1140px;
 }
 
@@ -209,7 +209,7 @@ input[type="checkbox"]:active + span::before {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  min-width: 399px;
+  width: 389px;
   min-height: 34px;
 }
 
@@ -219,6 +219,8 @@ input[type="checkbox"]:active + span::before {
   color: white;
   cursor: pointer;
   position: relative;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .button:hover {

@@ -250,14 +250,7 @@ input[type="checkbox"]:active + span::before {
 }
 
 .content__accent {
-  position: relative;
-}
-
-.content__accent::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0 0 0 /0.5);
-  inset: 19px 0 18px 3px;
+  color: #545050;
 }
 
 .content__list {

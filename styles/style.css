@@ -32,7 +32,7 @@ html {
 
 .content {
   display: grid;
-  grid-template-columns: 711px 415px;
+  grid-template-columns: 711px 420px;
   justify-content: center;
   align-content: center;
   column-gap: 30px;
@@ -47,7 +47,7 @@ html {
   width: 711px;
   height: 386px;
   position: relative;
-  margin-top: 75px;
+  margin-top: 72px;
 }
 
 .result__video {
@@ -75,21 +75,27 @@ ol {
   list-style: none;
 }
 
-.serach-form {
+.search-form {
   display: grid;
   grid-template-columns: 200px 200px 194px;
+  column-gap: 55px;
+  justify-content: center;
+  align-items: end;
 }
 
 .search-form__fieldset {
-  display: inline-block;
+  display: grid;
+  justify-content: center;
   min-width: 190px;
   border: none;
-  margin-top: 14px;
+  margin-bottom: 11px;
 }
 
 .search-form__fieldset  h2 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
+  margin-top: 14px;
+  margin-left: 8px;
 }
 
 .search-form__fieldset:first-child {
@@ -105,15 +111,31 @@ ol {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-top: 5px;
+  margin-bottom: 7px;
+  margin-right: 50px;
 }
 
-.search-form__label {
+.search-form__label-text-input {
   display: flex;
   align-items: center;
   cursor: pointer;
   width: fit-content;
   border: none;
+}
+
+.search-form__label {
+  display: grid;
+  grid-template-columns: 1px 1px 1px;
+  column-gap: 30px;
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+}
+
+.search-form__label .search-form__label-text {
+  display: grid;
+  grid-template-columns: 1px 1px 1px;
+  column-gap: 15px;
 }
 
 input[type="text"] {
@@ -122,10 +144,12 @@ input[type="text"] {
   border-right: none;
   border-bottom: 1px solid #fff;
   border-left: none;
+  color: #fff;
   font-size: 16px;
   width: 225px;
   height: 26px;
   margin-top: 8px;
+  margin-left: 10px;
 }
 
 input[type="text"]:focus {
@@ -142,6 +166,13 @@ input[type="text"]:focus-visible {
 input[type="text"]:active {
   outline: none;
   border: 1px solid #fff;
+}
+
+.search-form__label input[type="checkbox"] {
+  display: grid;
+  grid-template-columns: 3px 3px 3px;
+  align-content: start;
+  column-gap: 20px;
 }
 
 input[type="checkbox"]:focus {
@@ -197,15 +228,12 @@ input[type="checkbox"]:active + span::before {
 }
 
 .search-form__submit-button {
-  display: inline-block;
   min-width: 194px;
   min-height: 32px;
-  margin-left: 518px;
+  margin-left: 2px;
   font-size: 18px;
   font-weight: bold;
-  position: relative;
-  margin-bottom: 30px;
-  bottom: 35px;
+  margin-bottom: 13px;
 }
 
 .more-button {
@@ -233,6 +261,10 @@ input[type="checkbox"]:active + span::before {
   background-color: #545050;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button:focus-visible {
   outline: 3px double #fff;
 }
@@ -240,6 +272,8 @@ input[type="checkbox"]:active + span::before {
 .content__details {
   display: grid;
   width: 100%;
+  justify-content: center;
+  align-content: start;
 }
 
 .title {
@@ -255,11 +289,11 @@ input[type="checkbox"]:active + span::before {
 }
 
 .content__list {
+  width: 420px;
   max-height: 329px;
   overflow: auto;
   position: relative;
-  margin-bottom: 90px;
-  margin-right: 2px;
+  margin-right: 20px;
 }
 
 .content__list-item {
@@ -269,7 +303,7 @@ input[type="checkbox"]:active + span::before {
 .content__card-link {
   display: block;
   text-decoration: none;
-  margin: 2px;
+  margin: 8px;
   color: #fff;
 }
 
@@ -279,6 +313,10 @@ input[type="checkbox"]:active + span::before {
 
 .content__card-link:focus-visible {
   border: 1px solid #fff;
+}
+
+.content__card-link:active {
+  background-color: #545050;
 }
 
 .content__card-link_current {
@@ -291,19 +329,9 @@ input[type="checkbox"]:active + span::before {
   position: relative;
 }
 
-.content__video-card:active {
-  background-color: #545050;
-}
-
-.content__video-card:focus-visible {
-  border: 1px solid #fff;
-}
-
 .content__video-card-description-container {
   max-width: 100%;
   display: grid;
-  row-gap: 6px;
-  grid-template-rows: 35px 50px;
 }
 
 .content__video-card-description-container:hover {
@@ -328,10 +356,9 @@ input[type="checkbox"]:active + span::before {
 
 .content__video-card-thumbnail {
   display: grid;
-  min-width: 194px;
-  max-height: 107px;
+  width: 194px;
   object-fit: cover;
   object-position: left;
-  max-height: 107px;
+  max-height: 85px;
   margin-bottom: 34px;
 }

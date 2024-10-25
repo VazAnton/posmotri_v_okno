@@ -146,8 +146,8 @@ input[type="text"] {
   border-left: none;
   color: #fff;
   font-size: 16px;
-  width: 225px;
-  height: 26px;
+  min-width: 225px;
+  min-height: 26px;
   margin-top: 8px;
   margin-left: 10px;
 }
@@ -187,7 +187,7 @@ input[type="checkbox"]:focus {
   display: inline-block;
   text-align: center;
   background-color: transparent;
-  width: 19px;
+  min-width: 19px;
   height: 19px;
   outline: 1px solid white;
 }
@@ -196,7 +196,7 @@ input[type="checkbox"]:checked + span {
   display: inline-block;
   text-align: center;
   background-color: black;
-  width: 19px;
+  min-width: 19px;
   height: 19px;
   outline: 1px solid white;
 }
@@ -206,7 +206,7 @@ input[type="checkbox"]:checked + span::before {
   display: inline-block;
   text-align: center;
   background-color: white;
-  width: 15px;
+  min-width: 15px;
   height: 15px;
 }
 
@@ -215,7 +215,7 @@ input[type="checkbox"]:active + span::before {
   display: inline-block;
   text-align: center;
   background-color: white;
-  width: 15px;
+  min-width: 15px;
   height: 15px;
 }
 
@@ -240,8 +240,9 @@ input[type="checkbox"]:active + span::before {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  width: 389px;
+  min-width: 400px;
   min-height: 34px;
+  margin-left: 3px;
 }
 
 .button {
@@ -289,11 +290,12 @@ input[type="checkbox"]:active + span::before {
 }
 
 .content__list {
-  width: 420px;
-  max-height: 329px;
+  min-width: 420px;
+  max-height: 307px;
   overflow: auto;
   position: relative;
   margin-right: 20px;
+  margin-top: 12px;
 }
 
 .content__list-item {
@@ -356,9 +358,14 @@ input[type="checkbox"]:active + span::before {
 
 .content__video-card-thumbnail {
   display: grid;
-  width: 194px;
+  min-width: 194px;
   object-fit: cover;
   object-position: left;
-  max-height: 85px;
+  max-height: 74px;
   margin-bottom: 34px;
+}
+
+.error h2 {
+  font-size: 28px;
+  line-height: 1.1;
 }
